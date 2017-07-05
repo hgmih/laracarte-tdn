@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Laracarte</title>
+    {{-- <title>{{ isset($title) ? $title . ' | ' : '' }} Laracarte - List of artisans</title> --}}
+    <title>{{ page_title(isset($title) ? $title : '') }}</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
